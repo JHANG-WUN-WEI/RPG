@@ -17,11 +17,15 @@ public class Boar extends Enemy{
     private static final int EXP = 5;
 
     public Boar() {
-        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, Type.ANIMAL_NORMAL);
+        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, EnemyType.ANIMAL_NORMAL);
         Prop[] props = new Prop[2];
         props[0] = new AnimalSkin();
         props[1] = new Pork();
         setDrops(props);
     }
 
+    @Override
+    public String toString() {
+        return "山豬";
+    }
 }

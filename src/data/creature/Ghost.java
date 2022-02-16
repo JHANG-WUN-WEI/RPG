@@ -17,11 +17,16 @@ public class Ghost extends Enemy{
     private static final int EXP = 5;
 
     public Ghost() {
-        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, Type.MONSTER_NORMAL);
+        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, EnemyType.MONSTER_NORMAL);
         Prop[] props = new Prop[2];
         props[0] = new GhostHeart();
         props[1] = new Glass();
         setDrops(props);
+    }
+
+    @Override
+    public String toString() {
+        return "魑";
     }
 
 }

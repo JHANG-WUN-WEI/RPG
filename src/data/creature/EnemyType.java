@@ -5,7 +5,7 @@ package data.creature;
  * @Description
  * @date 2022/2/15 下午 03:37
  */
-public enum Type {
+public enum EnemyType {
     ANIMAL_NORMAL,
     ANIMAL_BOSS,
     MONSTER_NORMAL,

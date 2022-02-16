@@ -9,19 +9,19 @@ import data.item.Prop;
  */
 public class Enemy extends Creature{
     private Prop[] drops;
-    private Type type;
+    private EnemyType enemyType;
 
-    public Enemy(int hp, int agile, int strength, int hit, int defense, int level, int exp,Type type) {
+    public Enemy(int hp, int agile, int strength, int hit, int defense, int level, int exp, EnemyType enemyType) {
         super(hp, agile, strength, hit, defense, level, exp);
-        this.type = type;
+        this.enemyType = enemyType;
     }
 
-    public Type getType() {
-        return type;
+    public EnemyType getType() {
+        return enemyType;
     }
 
-    public void setType(Type type) {
-        this.type = type;
+    public void setType(EnemyType enemyType) {
+        this.enemyType = enemyType;
     }
 
     public void setDrops(Prop[] drops){

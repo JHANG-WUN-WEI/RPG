@@ -18,11 +18,15 @@ public class Bahamut extends Enemy {
 
 
     public Bahamut() {
-        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, Type.MONSTER_BOSS);
+        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, EnemyType.MONSTER_BOSS);
         Prop[] props = new Prop[2];
         props[0] = new GhostHeart();
         props[1] = new DemonSlaughterBadge();
         setDrops(props);
     }
 
+    @Override
+    public String toString() {
+        return "巴哈姆特";
+    }
 }

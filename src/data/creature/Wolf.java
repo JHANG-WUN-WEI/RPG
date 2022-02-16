@@ -17,11 +17,16 @@ public class Wolf extends Enemy{
     private static final int EXP = 5;
 
     public Wolf() {
-        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, Type.ANIMAL_NORMAL);
+        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, EnemyType.ANIMAL_NORMAL);
         Prop[] props = new Prop[2];
         props[0] = new AnimalSkin();
         props[1] = new WolfLeg();
         setDrops(props);
+    }
+
+    @Override
+    public String toString() {
+        return "狼";
     }
 
 

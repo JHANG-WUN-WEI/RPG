@@ -17,11 +17,16 @@ public class Elephant extends Enemy{
     private static final int EXP = 10;
 
     public Elephant() {
-        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, Type.ANIMAL_BOSS);
+        super(HP, AGILE, STRENGTH, HIT, DEFENSE, LEVEL, EXP, EnemyType.ANIMAL_BOSS);
         Prop[] props = new Prop[2];
         props[0] = new AnimalSkin();
         props[1] = new AnimalSlaughterBadge();
         setDrops(props);
+    }
+
+    @Override
+    public String toString() {
+        return "大象";
     }
 
 }
