@@ -2,7 +2,7 @@ package data.item;
 public class GhostHeart extends Prop{/*幽魂之心*/
     public GhostHeart(){
         setPrice(1);
-        setBlood(0);
+        setHp(0);
         setDefense(0);
         setAttack(0);
         setStrength(0);

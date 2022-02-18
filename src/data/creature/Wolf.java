@@ -29,6 +29,4 @@ public class Wolf extends Enemy{
         return "狼";
     }
 
-
-
 }

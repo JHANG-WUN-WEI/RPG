@@ -2,7 +2,7 @@ package data.item;
 public class LionClaw extends Prop{/*獅爪*/
     public LionClaw(){
         setPrice(1);
-        setBlood(0);
+        setHp(0);
         setDefense(0);
         setAttack(0);
         setStrength(0);

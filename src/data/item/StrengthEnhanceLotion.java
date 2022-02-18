@@ -2,7 +2,7 @@ package data.item;
 public class StrengthEnhanceLotion extends Prop{/*力量增強藥水*/
     public StrengthEnhanceLotion(){
         setPrice(2);
-        setBlood(0);
+        setHp(0);
         setDefense(0);
         setAttack(0);
         setStrength(2);

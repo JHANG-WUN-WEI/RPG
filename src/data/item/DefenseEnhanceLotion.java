@@ -2,7 +2,7 @@ package data.item;
 public class DefenseEnhanceLotion extends Prop{/*防禦增強藥水*/
     public DefenseEnhanceLotion(){
         setPrice(2);
-        setBlood(0);
+        setHp(0);
         setDefense(2);
         setAttack(0);
         setStrength(0);
